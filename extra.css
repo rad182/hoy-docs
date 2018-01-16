@@ -1,0 +1,153 @@
+html,
+	body {
+		margin: 0;
+		padding: 0;
+		background: #f5f7f9;
+	}
+
+	body {
+		font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+		font-size: 18px;
+		line-height: 27px;
+	}
+
+	.home a
+	{
+		text-decoration: none;
+		color: #fff;
+	}
+	
+	.home a:hover
+	{
+		text-decoration: underline;
+	}
+	
+	.terms_right a
+	{
+		text-decoration: underline;
+		color: #000;
+	}
+	
+	.terms_right a:hover
+	{
+		text-decoration: none;
+	}
+
+	a
+	{
+		color: #fff;
+		text-decoration: none;
+	}
+
+	a:hover
+	{
+		text-decoration: underline;
+	}
+
+	.half_container {
+		width: 50%;
+	}
+
+	.right {
+		float: right;
+	}
+
+	.left {
+		float: left;
+	}
+
+	.terms_right {
+		text-align: justify;
+		font-weight: 500;
+		padding: 120px 60px 60px;
+	}
+
+	.terms_right h1 {
+		font-weight: 500;
+	}
+
+	.terms_fixed {
+		position: fixed;
+		width: 50%;
+		height: 100%;
+		overflow: hidden;
+		background: #000;
+	}
+
+	.terms_left {
+		padding: 120px 60px 100px;
+		color: #fff;
+	}
+
+	.terms_left h1 {
+		font-size: 120px;
+		font-weight: 700;
+		line-height: 1.1em;
+		margin: 0;
+	}
+
+	.terms_left p {
+		font-size: 18px;
+		font-style: italic;
+	}
+
+	.home {
+		color: #fff;
+		position: fixed;
+		bottom: 30px;
+		left: 60px;
+	}
+
+	@media only screen and (max-width: 1500px) {
+		.terms_left h1 {
+			font-size: 60px;
+		}
+	}
+
+	@media only screen and (max-width: 1000px) {
+		.terms_left h1, .terms_left p
+		{
+			text-align: center;
+		}
+		.half_container {
+			width: 100%;
+		}
+		.terms_fixed {
+			position: relative;
+			float: left;
+			width: 100%;
+		}
+		.terms_left {
+			margin: 0 auto;
+			max-width: 600px;
+		}
+		.terms_right {
+			margin: 0 auto;
+			padding-top: 30px;
+		}
+		.home {
+			width: 100%;
+			background: #272727;
+			left: 0;
+			bottom: 0;
+			text-align: center;
+			padding: 10px 0;
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		.terms_left,
+		.terms_right {
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+	}
+
+	@media only screen and (max-width: 400px) {
+		.terms_left h1 {
+			font-size: 50px;
+		}
+		.terms_left {
+			padding: 60px 20px 40px;
+		}
+	}
